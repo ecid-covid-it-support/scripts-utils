@@ -1,11 +1,11 @@
 {
   "name": "save.children",
   "version": "2.0.0",
-  "description": "",
+  "description": "Script responsible for retrieving child data from a CSV file and registering it on the OCARIoT platform",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "save-children": "sudo node scripts/save.children.js"
+    "save.children": "sudo node scripts/save.children.js"
   },
   "author": "",
   "license": "ISC",

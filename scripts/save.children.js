@@ -93,7 +93,7 @@ async function saveChild(child, token) {
 async function init() {
     const adminToken = await generateAdminToken()
     const children = await csvToJSON(`${process.argv[3]}`)
-    console.log('Number of children to be insert: ', children.length)
+    console.log('Number of children to be inserted: ', children.length, '\n')
     let count = 0
     for (const child of children) {
         try {
@@ -104,7 +104,7 @@ async function init() {
             console.log(`Error at save the child ${child.username}:`, err)
         }
     }
-    console.log('Number of inserted children: ', count)
+    console.log('\nNumber of inserted children: ', count)
 }
 
 init()
