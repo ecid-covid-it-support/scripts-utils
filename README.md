@@ -40,8 +40,6 @@ To run the script it is necessary to have a CSV file with the children's data an
 
 It is also necessary have access to OCARIoT platform and the institution ID related to children.
 
----
-
 
 ### Execution
 ##### 1. Run Script
