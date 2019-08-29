@@ -1,11 +1,11 @@
 {
-  "name": "save-children",
+  "name": "save.children",
   "version": "2.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "save-children": "sudo node scripts/save-children.js"
+    "save-children": "sudo node scripts/save.children.js"
   },
   "author": "",
   "license": "ISC",

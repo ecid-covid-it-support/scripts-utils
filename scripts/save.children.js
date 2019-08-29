@@ -9,11 +9,11 @@ const instance = axios.create({
     })
 })
 
-const csvFilePath = `${process.env.CSV_FILE_PATH}`
+const csvFilePath = `${process.argv[2]}`
 
 function reverse(date) {
-    const newDate = date.split('/').reverse()
-    return newDate.join('-')
+    if (date.indexOf('/') > -1) return date.split('/').reverse()
+    return date.split('-').reverse()
 }
 
 function getAgeFromBirthDate(birthDate) {
@@ -92,7 +92,7 @@ async function saveChild(child, token) {
 
 async function init() {
     const adminToken = await generateAdminToken()
-    const children = await csvToJSON(`${process.env.INSTITUTION_ID}`)
+    const children = await csvToJSON(`${process.argv[3]}`)
     console.log('Number of children to be insert: ', children.length)
     let count = 0
     for (const child of children) {
