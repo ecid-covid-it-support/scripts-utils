@@ -42,7 +42,7 @@ It is also necessary have access to OCARIoT platform and the institution ID rela
 
 
 ### Execution
-##### 1. Run Script
+#### 1. Run Script
 To execute the script just be in the root of the project and run the following command replacing CHILDREN_DATA_CSV_FILE_PATH and INSTITUTION_ID with the appropriate values:
 ```sh  
 node scripts/save.children.js CHILDREN_DATA_CSV_FILE_PATH INSTITUTION_ID    
