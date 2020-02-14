@@ -58,6 +58,10 @@ typings/
 # dotenv environment variables file
 .env
 
+# other files
+*.txt
+*.xlsx
+
 # next.js build output
 .next
 
